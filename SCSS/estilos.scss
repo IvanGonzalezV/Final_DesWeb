@@ -17,10 +17,12 @@ span {
     font-weight: bolder;
 }
 
+
+
 // Seccion del NavBar
 
 .navbar {
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
     background-color: black;
@@ -47,6 +49,11 @@ span {
 }
 
 // seccion del Headr Inicio
+
+header {
+    position: relative;
+    z-index: 1;
+}
 
 .headr-box {
     background: linear-gradient(rgba(73, 95, 150, 0.75), rgba(73, 95, 150, 0.75)), url(/imagenes/Japanese_Pattern_8.webp);

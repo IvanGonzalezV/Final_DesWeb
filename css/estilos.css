@@ -17,7 +17,7 @@ span {
 }
 
 .navbar {
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
   background-color: black;
@@ -41,6 +41,11 @@ span {
 .navbar-nav .nav-item .custom-link:hover {
   color: lightseagreen;
   transform: scale(1.2);
+}
+
+header {
+  position: relative;
+  z-index: 1;
 }
 
 .headr-box {
