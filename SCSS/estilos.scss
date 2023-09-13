@@ -493,13 +493,13 @@ background: linear-gradient(rgba(73, 95, 150, 0.75), rgba(73, 95, 150, 0.75)), u
     #bannr-der {
       width: 100%;
       justify-content: center;
-      text-align: center;
+      text-align: end;
       iframe {
-        width: 80%; 
+        width: 61%; 
         height: auto;
       }
       p {
-        font-size: 60%;
+        font-size: 40%;
       }
     }
   }

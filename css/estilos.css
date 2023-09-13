@@ -447,16 +447,16 @@ iframe {
   #bannr-der {
     width: 100%;
     justify-content: center;
-    text-align: center;
+    text-align: end;
   }
   #bannr-izq iframe,
   #bannr-der iframe {
-    width: 80%;
+    width: 61%;
     height: auto;
   }
   #bannr-izq p,
   #bannr-der p {
-    font-size: 60%;
+    font-size: 40%;
   }
 }
 
