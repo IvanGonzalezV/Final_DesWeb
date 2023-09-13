@@ -427,7 +427,7 @@ background: linear-gradient(rgba(73, 95, 150, 0.75), rgba(73, 95, 150, 0.75)), u
             transition: transform 0.3s ease;
         }
                 p {
-                    font-size: 75%;
+                    font-size: 65%;
                     color: white;                
                 }
 }
@@ -454,7 +454,7 @@ background: linear-gradient(rgba(73, 95, 150, 0.75), rgba(73, 95, 150, 0.75)), u
             transition: transform 0.3s ease;
             }
                 p {
-                    font-size: 75%;
+                    font-size: 65%;
                     color: white;                
                 }
 }
@@ -495,11 +495,11 @@ background: linear-gradient(rgba(73, 95, 150, 0.75), rgba(73, 95, 150, 0.75)), u
       justify-content: center;
       text-align: center;
       iframe {
-        width: 80%; /* Reducir el ancho de los iframes en un 20% */
-        height: auto; /* Ajustar la altura automáticamente */
+        width: 80%; 
+        height: auto;
       }
       p {
-        font-size: 75%;
+        font-size: 60%;
       }
     }
   }
