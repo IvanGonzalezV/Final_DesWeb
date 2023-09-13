@@ -152,6 +152,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 10px;
         h2 {
             font-size: 18px;
             text-align: center;
@@ -300,7 +301,7 @@ background: linear-gradient(rgba(73, 95, 150, 0.75), rgba(73, 95, 150, 0.75)), u
     h2 {
         text-align: center;
         color: white;
-        font-size: 16px;
+        font-size: 15px;
         font-weight: bold;
         margin-right: 12px;
         margin-left: 12px;
@@ -309,7 +310,7 @@ background: linear-gradient(rgba(73, 95, 150, 0.75), rgba(73, 95, 150, 0.75)), u
     p {
         text-align: justify;
         margin: 20px 45px;
-        font-size: 14px;
+        font-size: 12px;
         font-weight: bold;
         padding-bottom: 25px;
     }   
@@ -370,6 +371,11 @@ background: linear-gradient(rgba(73, 95, 150, 0.75), rgba(73, 95, 150, 0.75)), u
     }
 }
 
+@media screen and (max-width: 768px) {
+    .color-1 {
+      font-size: 8px;
+    }
+  }
 
 // inicia seccion Portrait (Eventos)
 
@@ -412,6 +418,7 @@ background: linear-gradient(rgba(73, 95, 150, 0.75), rgba(73, 95, 150, 0.75)), u
     justify-content: space-around;
     align-items: end;
     margin-right: auto;
+    margin-bottom: 10px;
     background-color: rgb(72, 22, 78);
     padding: 1%;
     gap: 7%;
@@ -420,7 +427,7 @@ background: linear-gradient(rgba(73, 95, 150, 0.75), rgba(73, 95, 150, 0.75)), u
             transition: transform 0.3s ease;
         }
                 p {
-                    font-size: 80%;
+                    font-size: 75%;
                     color: white;                
                 }
 }
@@ -441,12 +448,13 @@ background: linear-gradient(rgba(73, 95, 150, 0.75), rgba(73, 95, 150, 0.75)), u
     padding: 1%;
     gap: 7%;
     margin-left: auto;
+    margin-bottom: 10px;
         iframe {
             transform: scale(1);
             transition: transform 0.3s ease;
             }
                 p {
-                    font-size: 80%;
+                    font-size: 75%;
                     color: white;                
                 }
 }
@@ -478,22 +486,20 @@ background: linear-gradient(rgba(73, 95, 150, 0.75), rgba(73, 95, 150, 0.75)), u
   }
   
   
-  @media screen and (max-width: 768px) {
-    #bannr-izq {
-      width: 100%;
-      justify-content: center; 
-      text-align: center;
-    }
-  
+//   
+
+@media screen and (max-width: 768px) {
+    #bannr-izq,
     #bannr-der {
       width: 100%;
-      justify-content: center; 
-      text-align: center; 
-    }
-  
-    
-    #bannr-izq p,
-    #bannr-der p {
-      font-size: 120%;
+      justify-content: center;
+      text-align: center;
+      iframe {
+        width: 80%; /* Reducir el ancho de los iframes en un 20% */
+        height: auto; /* Ajustar la altura automáticamente */
+      }
+      p {
+        font-size: 75%;
+      }
     }
   }

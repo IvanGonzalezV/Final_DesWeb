@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -137,6 +138,7 @@ figcaption {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 10px;
 }
 .headr-box.t h2 {
   font-size: 18px;
@@ -278,7 +280,7 @@ iframe {
 .headr-boxus h2 {
   text-align: center;
   color: white;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: bold;
   margin-right: 12px;
   margin-left: 12px;
@@ -287,7 +289,7 @@ iframe {
 .headr-boxus p {
   text-align: justify;
   margin: 20px 45px;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
   padding-bottom: 25px;
 }
@@ -339,6 +341,11 @@ iframe {
     transform: translateX(-100%);
   }
 }
+@media screen and (max-width: 768px) {
+  .color-1 {
+    font-size: 8px;
+  }
+}
 .sokaku-senseih {
   display: flex;
   flex-direction: column;
@@ -372,6 +379,7 @@ iframe {
   justify-content: space-around;
   align-items: end;
   margin-right: auto;
+  margin-bottom: 10px;
   background-color: rgb(72, 22, 78);
   padding: 1%;
   gap: 7%;
@@ -381,7 +389,7 @@ iframe {
   transition: transform 0.3s ease;
 }
 #bannr-izq p {
-  font-size: 80%;
+  font-size: 75%;
   color: white;
 }
 
@@ -398,13 +406,14 @@ iframe {
   padding: 1%;
   gap: 7%;
   margin-left: auto;
+  margin-bottom: 10px;
 }
 #bannr-der iframe {
   transform: scale(1);
   transition: transform 0.3s ease;
 }
 #bannr-der p {
-  font-size: 80%;
+  font-size: 75%;
   color: white;
 }
 
@@ -435,19 +444,20 @@ iframe {
 }
 
 @media screen and (max-width: 768px) {
-  #bannr-izq {
-    width: 100%;
-    justify-content: center;
-    text-align: center;
-  }
+  #bannr-izq,
   #bannr-der {
     width: 100%;
     justify-content: center;
     text-align: center;
   }
+  #bannr-izq iframe,
+  #bannr-der iframe {
+    width: 80%; /* Reducir el ancho de los iframes en un 20% */
+    height: auto; /* Ajustar la altura automáticamente */
+  }
   #bannr-izq p,
   #bannr-der p {
-    font-size: 120%;
+    font-size: 75%;
   }
 }
 
